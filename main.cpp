@@ -4,31 +4,20 @@ using namespace std;
 
 int main()
 {
-
-    int n,s=1,c,k;
-    cout<<"Enter the no. of rows :";
-    cin>>n;
-    s=n-1;
-    for(k=1;k<=n;k++)
-    {for(c=1;c<=s;c++)
-        cout<<" ";
-            s--;
-            for(c=1;c<=(2*k-1);c++)
-                cout<<"*";
-            cout<<endl;
-
-    }
-    s=1;
-    for(k=1;k<=n-1;k++)
+    int i,j,max;
+    cout<<"Enter the value of number please :";
+    cin>>i>>j;
+    max=(i>j)?i:j;
+    while(1)//Always True
     {
-        for(c=1;c<=s;c++)
-        cout<<" ";
-            s++;
-        for(c=1;c<=(2*(n-k)-1);c++)
-        cout<<"*";
-        cout<<endl;
-    }
 
-return 0;
+        if(max%i==0 && max%j==0)
+        {
+            cout<<"LCM of the given number is :"<<max;
+            break;
+        }
+        ++max;
+    }
+    return 0;
 
 }
