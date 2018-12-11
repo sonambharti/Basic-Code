@@ -12,6 +12,7 @@ int main()
     int N;
     cin>>N;
     print(N);
+    
     return 0;
 }
 
