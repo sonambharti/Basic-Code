@@ -1,23 +1,57 @@
-#include <iostream>
-
+/*#include<iostream>
 using namespace std;
-
-int main()
+int print(int n)
 {
-    int i,j,max;
-    cout<<"Enter the value of number please :";
-    cin>>i>>j;
-    max=(i>j)?i:j;
-    while(1)//Always True
+    if(n<=0)
+    return 1;
+    else
     {
-
-        if(max%i==0 && max%j==0)
+        int p=0, result;
+        while(n--)
         {
-            cout<<"LCM of the given number is :"<<max;
-            break;
+            result=print(p++);
+            cout<<result<<" ";
         }
-        ++max;
+        return result;
+
     }
-    return 0;
 
 }
+int main()
+ {
+	//code
+	int T;
+	cin>>T;
+	while(T--)
+	{
+	    int N;
+	    cin>>N;
+	    print(N);
+	    cout<<endl;
+	}
+	return 0;
+}
+*/
+#include<iostream>
+using namespace std;
+int print(int n)
+{
+    if(n<=0)
+        return 1;
+    print(n-1);
+    cout<<n<<" ";
+}
+int main()
+{
+    int N;
+    cin>>N;
+    print(N);
+    return 0;
+}
+
+
+
+
+
+
+
