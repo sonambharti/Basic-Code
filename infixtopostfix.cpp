@@ -15,7 +15,7 @@ void push(char item)
 {
 	if(top >= SIZE-1)
 	{
-		printf("\nStack Overflow.");
+		printf("\n Stack Overflow.");
 	}
 	else
 	{
