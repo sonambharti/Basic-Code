@@ -2,7 +2,7 @@
 using namespace std;
 int main()//binary search
 {
-    int i, n, num, middle, first, last;
+    int i, n, num, mid, first, last;
         cout<<"Enter the size of array: ";
         cin>>n;
         int arr[n];
@@ -15,23 +15,23 @@ int main()//binary search
         cin>>num;
         first=0;
         last=n-1;
-        middle=(first+last)/2;
+        mid=(first+last)/2;
         while(first<=last)
         {
-            if(arr[middle]<num)
+            if(arr[mid]<num)
             {
-                first=middle+1;
+                first=mid+1;
             }
-            else if(arr[middle]==num)
+            else if(arr[mid]==num)
             {
-                cout<<num<<" found at location "<<middle+1<<endl;
+                cout<<num<<" found at location "<<mid+1<<endl;
                 break;
             }
             else
             {
-                last=middle-1;
+                last=mid-1;
             }
-            middle=(first+last)/2;
+            mid=(first+last)/2;
 
         if(first>last)
         cout<<"Not found!!! \n\n"<<num<<" is not present in the list.";
