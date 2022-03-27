@@ -21,7 +21,7 @@ int main()
     int pos,n;
     cout<<"Enter the size array: ";
     cin>>n;
-    cout<<"Enter the value elements of the array: "<<endl;
+    cout<<"Enter the value elements of the array: \n";
     int arr[n];
     for(int i=0; i<n; i++)
         cin>>arr[i];
