@@ -15,7 +15,7 @@ int insertion_sort(int arr[], int n)
 int main()
 {
     int n;
-    cout<<"Enter the size of array: ";
+    cout<<"Enter the size of array: \n";
     cin>>n;
     int arr[n];
     cout<<"Enter the values for array elements: ";
