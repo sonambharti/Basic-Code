@@ -10,7 +10,7 @@ int main(){
         cin>>arr[i];
     }
 
-    cout<<endl<<"Print the min and max value of the array..."<<endl;
+    cout<<endl<<"Print the min and max value of the array...."<<endl;
     if(n==1){
         min = arr[n-1];
         max = arr[n-1];
