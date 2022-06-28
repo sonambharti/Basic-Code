@@ -9,11 +9,13 @@ int updateBit(int n, int pos, int value){
   return (n | (value<<pos));
 }
 int main(){
-  int n, pos;
+  int n, pos, value;
   cout << "Enter the No.: ";
   cin >> n;
   cout << "Enter the position: ";
   cin >> pos;
-  cout << "The required bit at "<<pos<<" th position is: "<<setBit(n,pos);
+  cout << "Enter the value to update: ";
+  cin >> value;
+  cout << "The required bit to "<<value<<"at "<<pos<<" th position is: "<<updateBit(n,pos,value);
   return 0;
 }
