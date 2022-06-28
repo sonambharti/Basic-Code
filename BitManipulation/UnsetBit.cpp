@@ -1,4 +1,4 @@
-/*Unset bit means set 0 at a given position*/
+/*Unset/Clear bit means set 0 at a given position*/
 
 #include <iostream>
 using namespace std;
