@@ -14,6 +14,15 @@ void permute(vector<int> &a, int indx){
         permute(a,indx+1);
         swap(a[i],a[indx]);
     }
+    
+    
+    /*
+    //.......STL Shortcut to find permutations........
+    sort(num.begin(),nums.end());
+    do{
+    ans.push_back(nums);
+    }while(next_permutation(nums.begin(), nums.end());
+    */
     return;
 }
 
