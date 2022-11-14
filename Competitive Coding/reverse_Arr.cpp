@@ -17,11 +17,11 @@ int main()
    int n;
    cin>>n;
    int arr[n];
-   for(int i=0; i<5; i++){
+   for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    rev_arr(arr, 0, 4);
-    for(int i=0; i<5; i++){
+    rev_arr(arr, 0, n-1);
+    for(int i=0; i<n; i++){
         cout<<arr[i]<<" ";
     }
     
